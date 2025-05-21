@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <a href="{% url 'task' %}">article</a>
+        {% csrf_token %}
+        <p><label>name</label>
+        <input type="text", name="name">
+        </p>
+
+        <p><label>surname</label>
+        <input type="text", name="surname">
+        </p>
+
+        <p><label>faculty</label>
+        <input type="text", name="faculty">
+        </p>
+
+        <p><label>age</label>
+        <input type="number", name="age">
+        </p>
+
+        <input type="submit" name="button">
+    </form>
+    
+</body>
+</html>
